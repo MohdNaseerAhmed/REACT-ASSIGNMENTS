@@ -1,0 +1,37 @@
+/* EmployeeTable.css */
+
+.employee-table {
+    width: 80%;                /* Sets the table width to 80% of its container */
+    margin: 0 auto;            /* Centers the table horizontally */
+    border-collapse: collapse; /* Merges borders for a cleaner look */
+    background-color: #f9f9f9; /* Light gray background for the table */
+    font-family: Arial, sans-serif; /* Clean, professional font */
+  }
+  
+  .employee-table th {
+    background-color: #4CAF50; /* Green background for headers */
+    color: white;              /* White text for contrast */
+    padding: 12px;             /* Spacing inside header cells */
+    text-align: left;          /* Aligns text to the left */
+  }
+  
+  .employee-table td {
+    padding: 12px;             /* Spacing inside data cells */
+    text-align: left;          /* Aligns text to the left */
+  }
+  
+  .employee-table tr:nth-child(odd) {
+    background-color: #e6f7ff; /* Light blue for odd rows */
+  }
+  
+  .employee-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray for even rows */
+  }
+  
+  .employee-table tr:hover {
+    background-color: #ddd;    /* Gray hover effect for interactivity */
+  }
+  
+  .employee-table, .employee-table th, .employee-table td {
+    border: 1px solid #ddd;    /* Light gray borders for definition */
+  }

@@ -1,0 +1,51 @@
+.form{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(24, 20, 21, 0.407);
+    padding: 10px 20px;
+    transition: transform 0.2s;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+h1{
+    font-size: x-large;
+    text-align: center;
+    color: blue;
+}
+label{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: rgb(144, 77, 97);
+    font-weight: bold;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 12px;
+}
+button{
+    padding:10px 15px;
+    border-radius: 6px;
+    margin: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #3f2bbe;
+    width: 40%;
+    font-size: 16px;
+}
+button:hover{
+    background: coral; 
+}
+#para{
+text-align: left;
+}

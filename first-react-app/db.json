@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "b00b",
+      "username": "NaseerAhmed",
+      "password": "1234",
+      "email": "naseer@gmail.com",
+      "Dob": "2025-02-11"
+    },
+    {
+      "id": "3391",
+      "username": "zakirhussain",
+      "password": "123",
+      "email": "23071a7239@vnrvjiet.in",
+      "Dob": "2025-01-28"
+    },
+    {
+      "id": "dcc4",
+      "username": "reehal",
+      "password": "reehal",
+      "email": "reehal@gmail.com",
+      "Dob": "2025-02-06"
+    }
+  ]
+}
