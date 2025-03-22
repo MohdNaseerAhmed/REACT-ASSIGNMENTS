@@ -1,0 +1,83 @@
+/* src/components/Technologies.css */
+.tech-card {
+    max-width: 500px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+
+  }
+  
+  .tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  .tech-card h2 {
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tech-card h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(90deg, #6c757d, #adb5bd);
+    bottom: -5px;
+    left: 25%;
+    border-radius: 2px;
+  }
+  
+  .tech-item {
+    font-size: 1.1rem;
+    color: #6c757d;
+    border: none;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: calc(0.1s * var(--index));
+  }
+  
+  .tech-item:hover {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: #fff;
+    transform: translateX(10px);
+  }
+  
+  .tech-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+  }
+  
+  .tech-item:hover::before {
+    left: 100%;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,6 @@
+/* src/components/Profiles.css */
+.profiles {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }

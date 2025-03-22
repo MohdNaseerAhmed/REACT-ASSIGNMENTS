@@ -1,0 +1,110 @@
+/* src/components/RegistrationForm.css */
+.registration-form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Softer gradient */
+    padding: 20px;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+  }
+  
+  .form-card {
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .form-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+  }
+  
+  .form-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .form-label-custom {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #34495e;
+    margin-bottom: 5px;
+  }
+  
+  .form-control-custom, .form-select-custom {
+    border-radius: 10px;
+    border: 1px solid #dfe6e9;
+    padding: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+  }
+  
+  .form-control-custom:focus, .form-select-custom:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.25);
+    background-color: #fff;
+  }
+  
+  .form-control-custom.is-invalid, .form-select-custom.is-invalid {
+    border-color: #e74c3c;
+  }
+  
+  .invalid-feedback {
+    font-size: 0.8rem;
+    color: #e74c3c;
+  }
+  
+  .form-check-custom {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .form-check-input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .form-check-input:checked {
+    background-color: #ff6b6b; /* Softer red for selected radio */
+    border-color: #ff6b6b;
+  }
+  
+  .form-check-label {
+    font-size: 0.9rem;
+    color: #34495e;
+    cursor: pointer;
+  }
+  
+  .btn-custom {
+    background: linear-gradient(135deg, #ff6b6b, #feb47b); /* Gradient button */
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background: linear-gradient(135deg, #feb47b, #ff6b6b);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+  }
+  
+  .btn-custom:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }

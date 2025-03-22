@@ -1,0 +1,21 @@
+/* src/components/Profile.css */
+.profile-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .profile-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #666;
+  }

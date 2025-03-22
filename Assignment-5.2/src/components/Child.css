@@ -1,0 +1,45 @@
+/* src/components/Child.css */
+.child-container {
+    text-align: center;
+  }
+  
+  .child-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+  }
+  
+  .btn-increment {
+    background-color: #28a745; /* Green for increment */
+  }
+  
+  .btn-increment:hover {
+    background-color: #218838;
+  }
+  
+  .btn-decrement {
+    background-color: #dc3545; /* Red for decrement */
+  }
+  
+  .btn-decrement:hover {
+    background-color: #c82333;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }

@@ -1,0 +1,115 @@
+/* src/App.css */
+.navbar {
+  background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(26, 37, 47, 0.95)) !important;
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px 0; /* Increased padding for more space */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Add a subtle shrink effect when scrolling */
+.navbar.scrolled {
+  padding: 10px 0;
+  background: linear-gradient(135deg, rgba(44, 62, 80, 1), rgba(26, 37, 47, 1)) !important;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.8rem; /* Slightly larger brand name */
+  letter-spacing: 2px;
+  color: #fff !important;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffd700 !important;
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Add a glowing effect to the brand */
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #ffd700, #ffeb3b);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.navbar-brand:hover::after {
+  width: 100%;
+}
+
+.nav-link {
+  font-size: 1.2rem; /* Slightly larger font */
+  font-weight: 500;
+  color: #fff !important;
+  margin: 0 20px; /* Increased spacing between links */
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Glowing underline effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background: linear-gradient(90deg, #ffd700, #ffeb3b);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Style the navbar toggle (hamburger menu) */
+.navbar-toggler {
+  border: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 215, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Ensure the collapsed menu has proper spacing on mobile */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding: 20px 0; /* Add padding to the collapsed menu */
+  }
+
+  .nav-link {
+    margin: 10px 0; /* Vertical spacing for links in mobile view */
+    text-align: center;
+  }
+}
+
+/* Add more space below the navbar */
+.container {
+  margin-top: 40px; /* Increased space between navbar and content */
+  align-items: center;
+
+}
